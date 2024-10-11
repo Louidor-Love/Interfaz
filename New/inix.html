@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de YouTube</title>
+    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            margin-right: 10px;
+            width: 220%;
+            height: 30px;
+            border-bottom: 3px ;
+        }
+
+        .user-menu button {
+            padding: 5px 10px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #F1F1F1;
+            padding: 15px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar li {
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .video-card {
+            width: 200px;
+            height: 120px;
+            background-color: #DDD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .video-card:hover {
+            transform: scale(1.1);
+        }
+
+        main {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">YouTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="user-menu">
+            <button>Iniciar sesión</button>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li>Inicio</li>
+            <li>Tendencias</li>
+            <li>Suscripciones</li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="video-grid">
+            <div class="video-card">Video 1</div>
+            <div class="video-card">Video 2</div>
+            <div class="video-card">Video 3</div>
+            <div class="video-card">Video 4</div>
+        </section>
+    </main>
+</body>
+</html>

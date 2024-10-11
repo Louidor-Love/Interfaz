@@ -1,0 +1,28 @@
+.contenedor {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.linea {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+
+button {
+    width: 60px;
+    padding: 5px;
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+
